@@ -3,7 +3,8 @@ var res = {
     MainScene_json: "res/MainScene.json",
     welcomeBG: "res/graphics/bgWelcome.jpg",
     textureJpg: "res/graphics/texture.png",
-    texturePlist: "res/graphics/texture.plist"
+    texturePlist: "res/graphics/texture.plist",
+    bgLayer_png:"res/graphics/bgLayer.jpg"
 };
 
 var g_resources = [];

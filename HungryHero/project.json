@@ -1,22 +1,24 @@
 {
-    "project_type": "javascript",
+  "project_type": "javascript",
 
-    "debugMode" : 1,
-    "showFPS" : true,
-    "frameRate" : 60,
-    "noCache" : false,
-    "id" : "gameCanvas",
-    "renderMode" : 0,
-    "engineDir":"frameworks/cocos2d-html5",
+  "debugMode": 1,
+  "showFPS": true,
+  "frameRate": 60,
+  "noCache": false,
+  "id": "gameCanvas",
+  "renderMode": 0,
+  "engineDir": "frameworks/cocos2d-html5",
 
-    "modules" : ["cocos2d", "cocostudio"],
+  "modules": [ "cocos2d", "cocostudio" ],
 
-    "jsList" : [
-        "src/resource.js",
-        "src/app.js",
-		"src/Scene/MenuScene.js",
-		"src/Scene/AboutScene.js",
-		"src/UI/SoundButton.js"
-		
-    ]
+  "jsList": [
+    "src/resource.js",
+    "src/app.js",
+    "src/Scene/MenuScene.js",
+    "src/Scene/GameScene.js",
+    "src/Scene/AboutScene.js",
+    "src/UI/SoundButton.js",
+    "src/Elemments/GameBackground.js",
+    "src/Elemments/Hero.js"
+  ]
 }
