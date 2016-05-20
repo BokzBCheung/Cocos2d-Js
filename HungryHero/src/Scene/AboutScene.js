@@ -1,5 +1,5 @@
 ﻿var AboutScene = cc.Scene.extend({
-
+    //增加注释测试新的Git
     ctor: function () {
         this._super();
 
