@@ -17,7 +17,7 @@
 
         this.init();
     },
-    inti:function(){
+    init:function(){
         var winSize = cc.director.getWinSize();
         //var winSize = cc.winSize;
         this._hero.x = winSize.width / 2;
