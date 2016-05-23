@@ -61,7 +61,9 @@ cc.game.onStart = function(){
     // Adjust viewport meta
     cc.view.adjustViewPort(true);
     // Setup the resolution policy and design resolution size
-    cc.view.setDesignResolutionSize(1024, 768, cc.ResolutionPolicy.SHOW_ALL);
+    
+    cc.view.setDesignResolutionSize(1024, 768, cc.ResolutionPolicy.SHOW_ALL);//适配背景大小防止跳屏现象
+
     // Instead of set design resolution, you can also set the real pixel resolution size
     // Uncomment the following line and delete the previous line.
     // cc.view.setRealPixelResolution(960, 640, cc.ResolutionPolicy.SHOW_ALL);
