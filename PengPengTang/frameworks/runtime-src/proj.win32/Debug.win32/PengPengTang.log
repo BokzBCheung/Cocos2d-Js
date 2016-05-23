@@ -1,0 +1,127 @@
+﻿生成启动时间为 2016/4/18 17:58:57。
+     1>项目“D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\PengPengTang.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         D:\Program Files\Microsoft Visual Studio 2012\VC\bin\CL.exe /c /I"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\..\Classes" /I"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\..\Classes\service" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\tools\simulator\libsimulator\lib\runtime" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\tools\simulator\libsimulator\lib\protobuf-lite" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\external\win32-specific\zlib\include" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\tools\simulator\libsimulator\proj.win32" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\tools\simulator\libsimulator\lib" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\\" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\base" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\external" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\storage" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\editor-support" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\scripting\js-bindings\auto" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\scripting\js-bindings\manual" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\audio\include" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\external\spidermonkey\include\win32" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\external\chipmunk\include\chipmunk" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\external\curl\include\win32" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\extensions" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\editor-support" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\cocos\platform\desktop" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\glfw3\include\win32" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\win32-specific\gles\include\OGLES" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\freetype2" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external\freetype2\include\win32\\" /I"D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\cocos\2d\..\..\external" /ZI /nologo /W3 /WX- /MP /Od /Oy- /D WIN32 /D _WINDOWS /D STRICT /D XP_WIN /D JS_HAVE___INTN /D JS_INTPTR_TYPE=int /D COCOS2D_DEBUG=1 /D COCOS2D_JAVASCRIPT=1 /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D GLFW_EXPOSE_NATIVE_WIN32 /D GLFW_EXPOSE_NATIVE_WGL /D _USRJSSTATIC /D _USRLIBSIMSTATIC /D _VARIADIC_MAX=10 /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc110.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /wd4800 /wd4099 /FIalgorithm /analyze- /errorReport:prompt "..\Classes\ide-support\RuntimeJsImpl.cpp" "..\Classes\ide-support\SimpleConfigParser.cpp" main.cpp ..\Classes\AppDelegate.cpp SimulatorWin.cpp
+         RuntimeJsImpl.cpp
+         SimpleConfigParser.cpp
+         main.cpp
+         AppDelegate.cpp
+     1>d:\classfiles\cocos\pengpengtang\frameworks\runtime-src\classes\appdelegate.cpp(50): warning C4305: “参数”: 从“double”到“float”截断
+         SimulatorWin.cpp
+     1>d:\classfiles\cocos\pengpengtang\frameworks\runtime-src\proj.win32\simulatorwin.cpp(397): warning C4305: “参数”: 从“double”到“float”截断
+     1>d:\classfiles\cocos\pengpengtang\frameworks\runtime-src\proj.win32\simulatorwin.cpp(731): warning C4018: “<”: 有符号/无符号不匹配
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _DEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /I"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include" /IDebug.win32\ /nologo /fo"Debug.win32\game.res" game.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(1137,5): warning MSB8012: TargetPath(D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\PengPengTang.exe) does not match the Linker's OutputFile property value (D:\ClassFiles\Cocos\PengPengTang\simulator\win32\PengPengTang.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       PreLinkEvent:
+         if not exist "D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\" mkdir "D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\"
+         xcopy /Y /Q "D:\ProjectSoft\Cocos\cocos2d-x\cocos2d-x-3.10\prebuilt\win32\*.*" "D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         复制了 60 个文件
+       Link:
+         D:\Program Files\Microsoft Visual Studio 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\../../../simulator/win32/PengPengTang.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\\" /LIBPATH:"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\\" libcurl_imp.lib "mozjs-33.lib" ws2_32.lib sqlite3.lib websockets.lib opengl32.lib glew32.lib libzlib.lib libwebp.lib libiconv.lib freetype.lib winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:libcmt.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\../../../simulator/win32/PengPengTang.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\PengPengTang.lib" /MACHINE:X86 /SAFESEH Debug.win32\game.res
+         Debug.win32\RuntimeJsImpl.obj
+         Debug.win32\SimpleConfigParser.obj
+         Debug.win32\main.obj
+         Debug.win32\AppDelegate.obj
+         Debug.win32\SimulatorWin.obj
+     1>RuntimeJsImpl.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+     1>libjscocos2d_2013.lib(ScriptingCore.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_module_register.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_manual_conversions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(cocos2d_specifics.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_ui_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_studio_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_builder_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_spine_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_extension_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_3d_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_3d_extension_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_3d_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_ui_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_studio_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_ccbreader.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_spine_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_extension_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_system_registration.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_chipmunk_registration.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_opengl_registration.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(XMLHTTPRequest.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_websocket.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_socketio.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_physics3d_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_physics3d_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_navmesh_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_navmesh_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_audioengine_auto.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_core.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_event_dispatcher_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(CCComponentJS.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_studio_conversions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_system_functions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_chipmunk_auto_classes.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_chipmunk_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_chipmunk_functions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_opengl_manual.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(js_bindings_opengl.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_opengl_functions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_navmesh_conversions.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(ProjectConfig.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(SimulatorConfig.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(AppEvent.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(DeviceEx-win32.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(AppLang.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(ConfigParser.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Runtime.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerMenuServiceProtocol.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerProtocol.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerMenuServiceWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(FileServer.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(ConnectWaitLayer.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(ConsoleCommand.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(RuntimeCCSImpl.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(CCHTTPRequest.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerMessageBoxServiceWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerFileDialogServiceWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerEditBoxServiceWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerTaskServiceWin.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(message_lite.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Protos.pb.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(generated_message_util.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Runtime_win32.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(VisibleRect.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Shine_png.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Portrait_png.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayEnable_png.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(Landscape_png.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(RuntimeProtocol.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(PlayerTaskServiceProtocol.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(common.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(coded_stream.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(zero_copy_stream_impl_lite.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(wire_format_lite.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(once.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(zero_copy_stream.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libsimulator_2013.lib(atomicops_internals_x86_msvc.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libSpine_2013.lib(SkeletonRenderer.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libSpine_2013.lib(SkeletonAnimation.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libSpine_2013.lib(PolygonBatch.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+     1>libSpine_2013.lib(spine-cocos2dx.obj) : error LNK2038: 检测到“_MSC_VER”的不匹配项: 值“1800”不匹配值“1700”(RuntimeJsImpl.obj 中)
+            正在创建库 D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\PengPengTang.lib 和对象 D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\Debug.win32\PengPengTang.exp
+     1>libjscocos2d_2013.lib(js_manual_conversions.obj) : error LNK2019: 无法解析的外部符号 __dtoui3，该符号在函数 "bool __cdecl jsval_to_blendfunc(struct JSContext *,class JS::Handle<class JS::Value>,struct cocos2d::BlendFunc *)" (?jsval_to_blendfunc@@YA_NPAUJSContext@@V?$Handle@VValue@JS@@@JS@@PAUBlendFunc@cocos2d@@@Z) 中被引用
+     1>libjscocos2d_2013.lib(cocos2d_specifics.obj) : error LNK2001: 无法解析的外部符号 __dtoui3
+     1>libsimulator_2013.lib(FileServer.obj) : error LNK2001: 无法解析的外部符号 __ultod3
+     1>libsimulator_2013.lib(ConsoleCommand.obj) : error LNK2001: 无法解析的外部符号 __ultod3
+     1>libjscocos2d_2013.lib(jsb_cocos2dx_studio_manual.obj) : error LNK2019: 无法解析的外部符号 __ultod3，该符号在函数 "private: void __thiscall rapidjson::GenericReader<struct rapidjson::UTF8<char>,struct rapidjson::UTF8<char>,class rapidjson::CrtAllocator>::ParseNumber<0,struct rapidjson::GenericStringStream<struct rapidjson::UTF8<char> >,class rapidjson::GenericDocument<struct rapidjson::UTF8<char>,class rapidjson::MemoryPoolAllocator<class rapidjson::CrtAllocator>,class rapidjson::CrtAllocator> >(struct rapidjson::GenericStringStream<struct rapidjson::UTF8<char> > &,class rapidjson::GenericDocument<struct rapidjson::UTF8<char>,class rapidjson::MemoryPoolAllocator<class rapidjson::CrtAllocator>,class rapidjson::CrtAllocator> &)" (??$ParseNumber@$0A@U?$GenericStringStream@U?$UTF8@D@rapidjson@@@rapidjson@@V?$GenericDocument@U?$UTF8@D@rapidjson@@V?$MemoryPoolAllocator@VCrtAllocator@rapidjson@@@2@VCrtAllocator@2@@2@@?$GenericReader@U?$UTF8@D@rapidjson@@U12@VCrtAllocator@2@@rapidjson@@AAEXAAU?$GenericStringStream@U?$UTF8@D@rapidjson@@@1@AAV?$GenericDocument@U?$UTF8@D@rapidjson@@V?$MemoryPoolAllocator@VCrtAllocator@rapidjson@@@2@VCrtAllocator@2@@1@@Z) 中被引用
+     1>libjscocos2d_2013.lib(XMLHTTPRequest.obj) : error LNK2001: 无法解析的外部符号 __ultod3
+     1>libsimulator_2013.lib(AppLang.obj) : error LNK2001: 无法解析的外部符号 __ultod3
+     1>libsimulator_2013.lib(ConfigParser.obj) : error LNK2001: 无法解析的外部符号 __ultod3
+     1>D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\../../../simulator/win32/PengPengTang.exe : fatal error LNK1120: 2 个无法解析的外部命令
+     1>已完成生成项目“D:\ClassFiles\Cocos\PengPengTang\frameworks\runtime-src\proj.win32\PengPengTang.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:52.57
