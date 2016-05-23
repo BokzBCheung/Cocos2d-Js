@@ -16,7 +16,7 @@
             bg1.y = bg1.height / 2;
             layer.addChild(bg1);
             var bg2 = new cc.Sprite(texture);
-            bg2.x = bg2.width / 2 + bg2.width;
+            bg2.x = bg2.width / 2 + bg2.width-1;
             bg2.y = bg2.height / 2;
             layer.addChild(bg2);
             return layer;//游戏背景
