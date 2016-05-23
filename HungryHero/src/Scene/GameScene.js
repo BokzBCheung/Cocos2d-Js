@@ -2,6 +2,8 @@
 
     _background: null,
     _hero:null,
+    _ui:null,
+
     ctor: function () {
         this._super();
 
@@ -14,7 +16,9 @@
         this._hero = new Hero();    
         layer.addChild(this._hero);
 
-
+        this._ui=new GameSceneUI();
+        layer.addChild(this._ui);
+        
         this.init();
     },
     init:function(){
