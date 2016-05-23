@@ -19,6 +19,7 @@
     "src/Scene/AboutScene.js",
     "src/UI/SoundButton.js",
     "src/Elemments/GameBackground.js",
-    "src/Elemments/Hero.js"
+    "src/Elemments/Hero.js",
+    "src/UI/GameSceneUI.js"
   ]
 }

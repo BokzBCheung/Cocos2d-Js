@@ -21,19 +21,19 @@
             layer.addChild(bg2);
             return layer;//游戏背景
         };
-        //天空精灵
+        //天空场景
         this._bg1 = buildParallaxBackground("res/graphics/bgLayer.jpg");
         this.addChild(this._bg1);
 
-        //山峰精灵
+        //山峰场景
         this._bg2 = buildParallaxBackground("#bgLayer2.png");
         this.addChild(this._bg2);
 
-        //建筑精灵
+        //建筑场景
         this._bg3 = buildParallaxBackground("#bgLayer3.png");
         this.addChild(this._bg3);
 
-        //数目精灵
+        //数目场景
         this._bg4 = buildParallaxBackground("#bgLayer4.png");
         this.addChild(this._bg4);
 
