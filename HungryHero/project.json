@@ -20,6 +20,10 @@
     "src/UI/SoundButton.js",
     "src/Elemments/GameBackground.js",
     "src/Elemments/Hero.js",
-    "src/UI/GameSceneUI.js"
+    "src/UI/GameSceneUI.js",
+    "src/GameConstants.js",
+    "src/Game.js",
+    "src/logic/FoodManager.js",
+    "src/logic/ObstacleManager.js"
   ]
 }
