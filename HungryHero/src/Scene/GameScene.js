@@ -1,5 +1,5 @@
 ﻿var GameScene = cc.Scene.extend({
-
+//测试一下
     _background: null,
     _hero:null,
     _ui:null,
