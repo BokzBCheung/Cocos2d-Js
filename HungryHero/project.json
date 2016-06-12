@@ -9,21 +9,26 @@
   "renderMode": 0,
   "engineDir": "frameworks/cocos2d-html5",
 
-  "modules": [ "cocos2d", "cocostudio" ],
+  "modules": [ "cocos2d", "cocostudio" ,"ccpool"],
 
   "jsList": [
     "src/resource.js",
-    "src/app.js",
-    "src/Scene/MenuScene.js",
-    "src/Scene/GameScene.js",
-    "src/Scene/AboutScene.js",
-    "src/UI/SoundButton.js",
+    "src/Sound.js",
+    "src/GameConstants.js",
     "src/Elemments/GameBackground.js",
     "src/Elemments/Hero.js",
-    "src/UI/GameSceneUI.js",
-    "src/GameConstants.js",
-    "src/Game.js",
+    "src/Elemments/Item.js",
+    "src/Elemments/Obstacle.js",
+    "src/logic/ObstacleManager.js",
     "src/logic/FoodManager.js",
-    "src/logic/ObstacleManager.js"
+    "src/UI/SoundButton.js",
+    "src/UI/GameSceneUI.js",
+    "src/UI/GameOverUI.js",
+    "src/app.js",
+    "src/Scene/MenuScene.js",
+    "src/Scene/AboutScene.js",
+    "src/Scene/GameScene.js",
+    "src/Game.js"
+
   ]
 }

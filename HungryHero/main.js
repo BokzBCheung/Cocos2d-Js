@@ -72,6 +72,10 @@ cc.game.onStart = function(){
     //load resources
     cc.LoaderScene.preload(g_resources, function () {
         cc.spriteFrameCache.addSpriteFrames(res.texturePlist);
+        cc.spriteFrameCache.addSpriteFrames(res.eatPlist);
+        cc.spriteFrameCache.addSpriteFrames(res.mushPlist);
+        cc.spriteFrameCache.addSpriteFrames(res.coffPlist);
+        cc.spriteFrameCache.addSpriteFrames(res.windPlist);
         cc.director.runScene(new MenuScene());
     }, this);
 };

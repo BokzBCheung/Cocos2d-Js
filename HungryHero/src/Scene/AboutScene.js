@@ -22,15 +22,17 @@
         layer.addChild(helloLabel);
         layer.addChild(helloLabel1); 
         helloLabel.setColor(cc.color(255,255,255));
-        var backBtn = new cc.MenuItemImage("#about_backButton.png", "#about_backButton.png", this._back, this);
+        var backBtn = new cc.MenuItemImage("#about_backButton.png", "#about_backButton.png", this._back);
         var menu = new cc.Menu(backBtn);
 
         layer.addChild(menu);
-        layer.bake();//添加返回事件
+        // layer.bake();//添加返回事件
+        return true;
 
     },
     _back:function()
     {
+        Sound.playCoffee();
         cc.director.runScene(new MenuScene());
     }
 });

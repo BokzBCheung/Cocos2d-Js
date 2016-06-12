@@ -1,6 +1,4 @@
-/**
- * Created by kenkozheng on 2014/8/22.
- */
+
 
 var ObstacleManager = cc.Class.extend({
 

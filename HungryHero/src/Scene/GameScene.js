@@ -1,27 +1,37 @@
-﻿var GameScene = cc.Scene.extend({
-//测试一下
-    _background: null,
-    _hero:null,
+﻿
+var GameScene = cc.Scene.extend({
+
     _ui:null,
+    _gameOverUI:null,
+    _background:null,
+    _hero:null,
+    itemBatchLayer:null,
+    _coffeeEffect:null,
+    _mushroomEffect:null,
+    _windEffect:null,
+
     _foodManager:null,
     _obstacleManager:null,
 
     _touchY:0,
 
-    ctor: function () {
-        this._super();
 
+    ctor:function () {
+        this._super();
         var layer = new cc.Layer();
         this.addChild(layer);
 
         this._background = new GameBackground();
         layer.addChild(this._background);
 
-        this._hero = new Hero();    
-        layer.addChild(this._hero);
+        this._hero = new Hero();
+        this.addChild(this._hero);
 
-        this._ui=new GameSceneUI();
-        layer.addChild(this._ui);
+        this.itemBatchLayer = new cc.SpriteBatchNode("res/graphics/texture.png");
+        this.addChild(this.itemBatchLayer);
+
+        this._ui = new GameSceneUI();
+        this.addChild(this._ui);
         this._ui.update();
 
         if("touches" in cc.sys.capabilities)
@@ -32,14 +42,20 @@
 
         this._foodManager = new FoodManager(this);
         this._obstacleManager = new ObstacleManager(this);
-        
+
         this.init();
+
+        return true;
     },
-    init:function(){
+
+    init:function() {
+        Sound.stop();
+        Sound.playGameBgMusic();
+        if(this._gameOverUI)
+            this._gameOverUI.setVisible(false);
 
         var winSize = cc.director.getWinSize();
         this._ui.setVisible(true);
-
         Game.user.lives = GameConstants.HERO_LIVES;
         Game.user.score = Game.user.distance = 0;
         Game.gameState = GameConstants.GAME_STATE_IDLE;
@@ -49,8 +65,15 @@
         this._hero.x = -winSize.width/2;
         this._hero.y = winSize.height/2;
 
+        this._foodManager.init();
+        this._obstacleManager.init();
         this.scheduleUpdate();
+
+        this.stopCoffeeEffect();
+        this.stopWindEffect();
+        this.stopMushroomEffect();
     },
+
     _onTouchMoved:function(touches, event) {
         if(Game.gameState != GameConstants.GAME_STATE_OVER)
             this._touchY = touches[0].getLocation().y;
@@ -60,6 +83,12 @@
         if(Game.gameState != GameConstants.GAME_STATE_OVER)
             this._touchY = event.getLocationY();
     },
+
+    _back:function(keyCode, event) {
+        if (keyCode == cc.KEY.back)
+            cc.director.runScene(new MenuScene());
+    },
+
     _handleHeroPose:function() {
         var winSize = cc.director.getWinSize();
         // Rotate this._hero based on mouse position.
@@ -78,6 +107,19 @@
             this._hero.setRotation(0);
         }
     },
+
+    _shakeAnimation:function() {
+        // Animate quake effect, shaking the camera a little to the sides and up and down.
+        if (Game.user.hitObstacle > 0){
+            this.x = parseInt(Math.random() * Game.user.hitObstacle - Game.user.hitObstacle * 0.5);
+            this.y = parseInt(Math.random() * Game.user.hitObstacle - Game.user.hitObstacle * 0.5);
+        } else if (this.x != 0) {
+            // If the shake value is 0, reset the stage back to normal. Reset to initial position.
+            this.x = 0;
+            this.y = 0;
+        }
+    },
+
     showWindEffect:function() {
         if(this._windEffect)
             return;
@@ -95,6 +137,7 @@
             this._windEffect = null;
         }
     },
+
     showCoffeeEffect:function(){
         if(this._coffeeEffect)
             return;
@@ -128,19 +171,56 @@
             this._mushroomEffect = null;
         }
     },
+
+    showEatEffect:function(itemX, itemY){
+        var eat = new cc.ParticleSystem("res/particles/eat.plist");
+        eat.setAutoRemoveOnFinish(true);
+        eat.x = itemX;
+        eat.y = itemY;
+        this.addChild(eat);
+    },
+
+    /**
+     * hero被碰撞N次后，结束游戏；结束之前，先播放hero掉落的动画
+     */
+    endGame:function(){
+        this.x = 0;
+        this.y = 0;
+        Game.gameState = GameConstants.GAME_STATE_OVER;
+        this.stopCoffeeEffect();
+        this.stopWindEffect();
+        this.stopMushroomEffect();
+    },
+
+    _gameOver:function(){
+        if(!this._gameOverUI){
+            this._gameOverUI = new GameOverUI(this);
+            this.addChild(this._gameOverUI);
+        }
+        this._gameOverUI.setVisible(true);
+        this._gameOverUI.init();
+        Sound.playLose();
+    },
+
+    /**
+     *
+     * @param elapsed 秒
+     */
     update:function(elapsed) {
         var winSize = cc.director.getWinSize();
-        switch(Game.gameState) {
+        switch(Game.gameState){
             case GameConstants.GAME_STATE_IDLE:
                 // Take off.
-                if (this._hero.x < winSize.width * 0.5 * 0.5) {
+                if (this._hero.x < winSize.width * 0.5 * 0.5)
+                {
                     this._hero.x += ((winSize.width * 0.5 * 0.5 + 10) - this._hero.x) * 0.05;
                     this._hero.y -= (this._hero.y - this._touchY) * 0.1;
 
                     Game.user.heroSpeed += (GameConstants.HERO_MIN_SPEED - Game.user.heroSpeed) * 0.05;
                     this._background.speed = Game.user.heroSpeed * elapsed;
                 }
-                else {
+                else
+                {
                     Game.gameState = GameConstants.GAME_STATE_FLYING;
                     this._hero.state = GameConstants.HERO_STATE_FLYING;
                 }
@@ -195,8 +275,8 @@
                     // If hit by an obstacle.
                     Game.user.hitObstacle--;
 
-                    // // Camera shake.
-                    // this._shakeAnimation();
+                    // Camera shake.
+                    this._shakeAnimation();
                 }
 
                 // If we have a mushroom, reduce the value of the power.
@@ -221,7 +301,48 @@
                 this._ui.update();
 
                 break;
+
+            case GameConstants.GAME_STATE_OVER:
+                this._foodManager.removeAll();
+                this._obstacleManager.removeAll();
+
+                // Spin the hero.
+                this._hero.setRotation(30);
+
+                // Make the hero fall.
+
+                // If hero is still on screen, push him down and outside the screen. Also decrease his speed.
+                // Checked for +width below because width is > height. Just a safe value.
+                if (this._hero.y > -this._hero.height/2)
+                {
+                    Game.user.heroSpeed -= Game.user.heroSpeed * elapsed;
+                    this._hero.y -= winSize.height * elapsed;
+                }
+                else
+                {
+                    // Once he moves out, reset speed to 0.
+                    Game.user.heroSpeed = 0;
+
+                    // Stop game tick.
+                    this.unscheduleUpdate();
+
+                    // Game over.
+                    this._gameOver();
+                }
+
+                // Set the background's speed based on hero's speed.
+                this._background.speed = Game.user.heroSpeed * elapsed;
+                break;
         }
 
+        if(this._mushroomEffect) {
+            this._mushroomEffect.x = this._hero.x + this._hero.width/4;
+            this._mushroomEffect.y = this._hero.y;
+        }
+        if(this._coffeeEffect) {
+            this._coffeeEffect.x = this._hero.x + this._hero.width/4;
+            this._coffeeEffect.y = this._hero.y;
+        }
     }
+
 });

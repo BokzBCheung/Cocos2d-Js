@@ -1,7 +1,3 @@
-/**
- * Created by kenkozheng on 2014/8/21.
- * This game is based on the Flash Starling version of Hungry-Hero created by Hsharma, visit http://www.hungryherogame.com
- */
 
 var Game = {
 

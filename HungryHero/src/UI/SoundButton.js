@@ -20,14 +20,10 @@
     },
 
     _soundOnOff: function () {
-        console.log("sound");
-        //Sound.toggleOnOff();
+        // console.log("sound");
+        Sound.toggleOnOff();
     }
     
-
-
-
-
 
 
 });

@@ -44,6 +44,8 @@
         layer.addChild(menu);//添加渐变的声音按钮
         menu.x = menu.y = 0;
 
+        Sound.playMenuBgMusic();
+
         this.scheduleUpdate();
     },
     _play: function () {
